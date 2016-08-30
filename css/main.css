@@ -1,0 +1,118 @@
+/* font-family: "Exo2Regular"; */
+@font-face {
+    font-family: "Exo2Regular";
+    src: url("../fonts/Exo2Regular/Exo2Regular.eot");
+    src: url("../fonts/Exo2Regular/Exo2Regular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Exo2Regular/Exo2Regular.woff") format("woff"),
+    url("../fonts/Exo2Regular/Exo2Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "Exo2Medium"; */
+@font-face {
+    font-family: "Exo2Medium";
+    src: url("../fonts/Exo2Medium/Exo2Medium.eot");
+    src: url("../fonts/Exo2Medium/Exo2Medium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Exo2Medium/Exo2Medium.woff") format("woff"),
+    url("../fonts/Exo2Medium/Exo2Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "Exo2SemiBold"; */
+@font-face {
+    font-family: "Exo2SemiBold";
+    src: url("../fonts/Exo2SemiBold/Exo2SemiBold.eot");
+    src: url("../fonts/Exo2SemiBold/Exo2SemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/Exo2SemiBold/Exo2SemiBold.woff") format("woff"),
+    url("../fonts/Exo2SemiBold/Exo2SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansRegular"; */
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansLightItalic"; */
+@font-face {
+    font-family: "OpenSansLightItalic";
+    src: url("../fonts/OpenSansLightItalic/OpenSansLightItalic.eot");
+    src: url("../fonts/OpenSansLightItalic/OpenSansLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansLightItalic/OpenSansLightItalic.woff") format("woff"),
+    url("../fonts/OpenSansLightItalic/OpenSansLightItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+.logo {
+    margin: 10px 0 0 0;
+}
+.logo_text {
+    color: #000;
+    font-family: OpenSansRegular;
+    font-size: 12px;
+    border-top: 1px solid #25ace3;
+    width: 177px;
+    margin-top: 3px;
+}
+.logo_rectangle {
+    color: #ffffff;
+    font-family: OpenSansLightItalic;
+    font-size: 15px;
+    background: url("../images/logo_rectangle.png") no-repeat;
+    padding: 3px 0 4px 20px;
+    display:inline-block;
+    width: 202px;
+    position: relative;
+    top: -15px;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .logo_rectangle {
+        top: 3px;
+    }
+}
+@media screen and (max-width: 401px) {
+    .logo_rectangle {
+        top: 3px;
+    }
+}
+.logo_support {
+    margin-top: 35px;
+}
+.logo_support_info1 {
+    color: #25ace3; /* text color */
+    font-family: Exo2SemiBold;
+    font-size: 13.83px;
+    text-transform: uppercase;
+    display: inline;
+}
+.logo_support_info2 {
+    color: #2c2c2c; /* text color */
+    font-family: Exo2Regular;
+    font-size: 18px;
+}
+.logo_contacts {
+    margin-top: 25px;
+    padding: 0;
+}
+.logo_phone {
+    color: #4d4c4c; /* text color */
+    font-family: Exo2SemiBold;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.logo_skype {
+    color: #1565c0; /* text color */
+    font-family: Exo2Medium;
+    font-size: 16px;
+    display: inline;
+}
