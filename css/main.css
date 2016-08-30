@@ -73,12 +73,7 @@
     position: relative;
     top: -15px;
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .logo_rectangle {
-        top: 3px;
-    }
-}
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 991px) {
     .logo_rectangle {
         top: 3px;
     }
@@ -101,6 +96,11 @@
 .header_contacts {
     margin-top: 25px;
     padding: 0;
+}
+@media screen and (max-width: 767px) {
+    .header_contacts {
+        margin-top: 0;
+    }
 }
 .header_phone {
     color: #4d4c4c; /* text color */
