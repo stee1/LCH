@@ -7,10 +7,7 @@ $(function () {
         if (this.className.indexOf("dropdown") === -1) {
             $(this).siblings().removeClass('active');
             $(this).addClass('active');
-            console.log(this.className);
-            console.log("del here")
         }
-
 
         if (this.className.indexOf("open") > 0) {
             var images, selectedLang, alternativeLang, tmp;
@@ -21,5 +18,10 @@ $(function () {
             selectedLang.src = alternativeLang.src;
             alternativeLang.src = tmp;
         }
+    });
+
+    $('.top-block-el li').click(function () {
+        $(this).siblings().removeClass('top-block-el-active');
+        $(this).addClass('top-block-el-active');
     });
 });
