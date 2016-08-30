@@ -3,37 +3,76 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Luxe change</title>
 </head>
 <body>
 <div class="container">
-    <!--<div class="container-fluid">-->
-        <div class="row">
-            <div class="col-md-5 col-sm-4 col-xs-12 header_logo">
-                <a href="#"><img src="images/logo.png" alt="Luxe change"></a>
-                <p class="logo_rectangle">Мы ценим ваше время</p>
-                <p class="logo_text">Автоматический обмен валют</p>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-5 text-center header_support">
-                <img src="images/logo_support.png" alt="support">
-                <p class="header_support_info1">Поддержка</p>
-                <p class="header_support_info2">Пн-ВС с 10:00 до 24:00 (МСК)</p>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-7 text-right header_contacts">
-                <p class="header_phone">+38 (050) 678 33 32</p>
-                <img class="icon" src="images/icon_skype.png" alt="skype">
-                <p class="header_skype">luxe-change</p>
-            </div>
+    <div class="row">
+        <div class="col-md-5 col-sm-4 col-xs-12 header_logo">
+            <a href="#"><img src="images/logo.png" alt="Luxe change"></a>
 
+            <p class="logo_rectangle">Мы ценим ваше время</p>
 
+            <p class="logo_text">Автоматический обмен валют</p>
         </div>
-    <!--</div>-->
+        <div class="col-md-4 col-sm-4 col-xs-5 text-center header_support">
+            <img src="images/logo_support.png" alt="support">
+
+            <p class="header_support_info1">Поддержка</p>
+
+            <p class="header_support_info2">Пн-ВС с 10:00 до 24:00 (МСК)</p>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-7 text-right header_contacts">
+            <p class="header_phone">+38 (050) 678 33 32</p>
+            <img class="icon" src="images/icon_skype.png" alt="skype">
+
+            <p class="header_skype">luxe-change</p>
+        </div>
+    </div>
 
 </div>
 
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <!--<a class="navbar-brand active" href="#">Главная</a>-->
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar">
+        <div class="container">
+            <ul class="nav navbar-nav  navbar-right">
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="#">ПРАВИЛА</a></li>
+                <li><a href="#">ОТЗЫВЫ</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">НОВОСТИ</a></li>
+                <li><a href="#">ПАРТНЕРАМ</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">
+                        <img src="images/ru_flag.png" alt="russian">
+                        <img id="carret" src="images/arrow_down_nav.png" alt="more"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><img src="images/gb_flag.png" alt="english"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
