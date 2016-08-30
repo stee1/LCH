@@ -51,7 +51,7 @@
 
 
 
-.logo {
+.header_logo {
     margin: 10px 0 0 0;
 }
 .logo_text {
@@ -83,26 +83,26 @@
         top: 3px;
     }
 }
-.logo_support {
+.header_support {
     margin-top: 35px;
 }
-.logo_support_info1 {
+.header_support_info1 {
     color: #25ace3; /* text color */
     font-family: Exo2SemiBold;
     font-size: 13.83px;
     text-transform: uppercase;
     display: inline;
 }
-.logo_support_info2 {
+.header_support_info2 {
     color: #2c2c2c; /* text color */
     font-family: Exo2Regular;
     font-size: 18px;
 }
-.logo_contacts {
+.header_contacts {
     margin-top: 25px;
     padding: 0;
 }
-.logo_phone {
+.header_phone {
     color: #4d4c4c; /* text color */
     font-family: Exo2SemiBold;
     font-size: 24px;
@@ -110,7 +110,7 @@
     margin-bottom: 0;
 }
 
-.logo_skype {
+.header_skype {
     color: #1565c0; /* text color */
     font-family: Exo2Medium;
     font-size: 16px;
