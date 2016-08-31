@@ -188,46 +188,75 @@
     margin-right: 30px;
     padding: 0;
 }
-.top-block-el p {
-    padding: 20px 30px;
-    margin-bottom: 0;
-    color: #353535;
-    font-family: OpenSansSemiBold;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-.top-block-el ul {
+/*.top-block-el p {*/
+    /*padding: 20px 30px;*/
+    /*margin-bottom: 0;*/
+    /*color: #353535;*/
+    /*font-family: OpenSansSemiBold;*/
+    /*font-size: 18px;*/
+    /*text-transform: uppercase;*/
+/*}*/
+/*.top-block-el ul {*/
 
-    padding: 10px 0;
-}
-.top-block-el li {
-    padding: 5px 0;
-    cursor: pointer;
-}
+    /*padding: 10px 0;*/
+/*}*/
+/*.top-block-el li {*/
+    /*padding: 5px 0;*/
+    /*cursor: pointer;*/
+/*}*/
 .top-block-el-active {
-    background: url("../images/list1_rectangle.png") no-repeat top right;
+    /*background: url("../images/list1_rectangle.png") no-repeat top right;*/
+    background: url("../images/list1_rectangle.png") no-repeat;
     width: 105%;
 }
 .filter_white {
     -webkit-filter: brightness(0.2) invert(1);
     filter: brightness(0.2) invert(1);
 }
-.top-block-el li p {
-    text-transform: none;
-    display: inline;
+/*.top-block-el li p {*/
+    /*text-transform: none;*/
+    /*display: inline;*/
+    /*color: #000000;*/
+    /*font-family: OpenSansRegular;*/
+    /*font-size: 14px;*/
+    /*padding: 0 0 0 10px;*/
+/*}*/
+/*.top-block-el li img {*/
+    /*margin-left: 30px;*/
+/*}*/
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+.table-borderless tbody tr td {
+    padding: 5px 0 5px 30px
+}
+.table>tbody>tr>td {
+
+}
+
+.table-borderless thead {
+    border-bottom: 1px solid #c2c0bd;
+    color: #353535;
+    font-family: OpenSansSemiBold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.table-borderless thead tr th {
+    padding: 20px 0 20px 30px;
+}
+.table>tbody>tr {
+    cursor: pointer;
+
+}
+.table>tbody>tr>td p{
     color: #000000;
     font-family: OpenSansRegular;
     font-size: 14px;
-    padding: 0 0 0 10px;
+    padding: 0;
+    margin: 0;
 }
-.top-block-el li img {
-    margin-left: 30px;
-}
-.one-px-line {
-    height: 1px;
-    width: 100%;
-    background-color: #c2c0bd;
-    font-size: 0px;
-    line-height: 0px;
-    display: block;
+.table {
+    table-layout: fixed;
+    word-wrap: break-word;
+    margin-bottom: 0;
 }
