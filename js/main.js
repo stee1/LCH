@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Created by dmitry on 30.08.2016.
  */
 $(function () {
@@ -26,6 +26,8 @@ $(function () {
             $(this).addClass('top-block-el-active');
             $(this).siblings().find('img').removeClass('filter_white');
             $(this).find('img').addClass('filter_white');
+            $(this).siblings().find('.top-col2-info').text("");
+            $(this).find('.top-col2-info').text("не хватает?");
         }
     });
 });

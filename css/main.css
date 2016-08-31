@@ -188,22 +188,6 @@
     margin-right: 30px;
     padding: 0;
 }
-/*.top-block-el p {*/
-    /*padding: 20px 30px;*/
-    /*margin-bottom: 0;*/
-    /*color: #353535;*/
-    /*font-family: OpenSansSemiBold;*/
-    /*font-size: 18px;*/
-    /*text-transform: uppercase;*/
-/*}*/
-/*.top-block-el ul {*/
-
-    /*padding: 10px 0;*/
-/*}*/
-/*.top-block-el li {*/
-    /*padding: 5px 0;*/
-    /*cursor: pointer;*/
-/*}*/
 .top-block-el-active {
     /*background: url("../images/list1_rectangle.png") no-repeat top right;*/
     background: url("../images/list1_rectangle.png") no-repeat;
@@ -213,27 +197,18 @@
     -webkit-filter: brightness(0.2) invert(1);
     filter: brightness(0.2) invert(1);
 }
-/*.top-block-el li p {*/
-    /*text-transform: none;*/
-    /*display: inline;*/
-    /*color: #000000;*/
-    /*font-family: OpenSansRegular;*/
-    /*font-size: 14px;*/
-    /*padding: 0 0 0 10px;*/
-/*}*/
-/*.top-block-el li img {*/
-    /*margin-left: 30px;*/
-/*}*/
 .table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
     border: none;
 }
 .table-borderless tbody tr td {
-    padding: 5px 0 5px 30px
+    padding: 5px 0 5px 0
+}
+.table-borderless tbody tr td:first-of-type {
+    padding-left: 30px
 }
 .table>tbody>tr>td {
 
 }
-
 .table-borderless thead {
     border-bottom: 1px solid #c2c0bd;
     color: #353535;
@@ -242,7 +217,10 @@
     text-transform: uppercase;
 }
 .table-borderless thead tr th {
-    padding: 20px 0 20px 30px;
+    padding: 20px 0;
+}
+.table-borderless thead tr th:first-of-type {
+    padding-left: 30px;
 }
 .table>tbody>tr {
     cursor: pointer;
@@ -252,11 +230,23 @@
     color: #000000;
     font-family: OpenSansRegular;
     font-size: 14px;
-    padding: 0;
+    margin: 0 0 0 20px;
+    display: inline;
+}
+.table>tbody>tr>td p.top-col2-currency {
     margin: 0;
 }
 .table {
     table-layout: fixed;
     word-wrap: break-word;
     margin-bottom: 0;
+}
+.top-col2-info {
+    color: #fff !important;
+    font-family: OpenSansRegular;
+    font-size: 12px;
+    border-bottom: 1px dotted #fff;
+}
+.second_table .table-borderless tbody tr td{
+    padding: 0;
 }
