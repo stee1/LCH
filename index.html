@@ -42,6 +42,7 @@
     </div>
 </div>
 <!--End header-->
+
 <!--Navigation-->
 <nav class="navbar navbar-default navbar-static-top">
     <div class="navbar-header">
@@ -79,6 +80,7 @@
     </div>
 </nav>
 <!--End navigation-->
+
 <!--top block-->
 <div class="container-fluid" id="top">
     <div class="row">
@@ -91,7 +93,7 @@
                 </thead>
             </table>
             <div class="table-responsive">
-                <table class='table table-borderless'>
+                <table class='table table-borderless clickable'>
                     <colgroup>
                         <col class="col-xs-1">
                         <col class="col-xs-8">
@@ -173,15 +175,15 @@
                 </table>
             </div>
         </div>
-        <div class="col-xs-11 col-sm-7 col-md-6 col-lg-4 top-block-el">
+        <div id="top-col2" class="col-xs-11 col-sm-9 col-md-6 col-lg-4 top-block-el">
             <div class="table-responsive">
-                <table class='table table-borderless second_table'>
+                <table class='table table-borderless second_table clickable'>
                     <colgroup>
                         <col class="col-xs-1">
-                        <col class="col-xs-3">
+                        <col class="col-xs-3 col-lg-4">
                         <col class="col-xs-3">
                         <col class="col-xs-2">
-                        <col class="col-xs-3">
+                        <col class="col-xs-3 col-lg-4">
                     </colgroup>
                     <thead>
                     <tr>
@@ -221,7 +223,7 @@
                     <tr>
                         <td><img src="images/list1_wtb.png" alt="wmr"></td>
                         <td><p>ВТБ24</p></td>
-                        <td>3939564</td>
+                        <td>3939564.56</td>
                         <td><p class="top-col2-currency">Руб.
 
                             <p></td>
@@ -266,13 +268,55 @@
                 </table>
             </div>
         </div>
-        <div class="col-xs-10 col-sm-3 col-md-6 col-lg-2 top-block-el">
-            <p>Резерв</p>
-            <span class="one-px-line"></span>
+        <div id="top-col3" class="col-xs-10 col-sm-5 col-md-6 col-lg-3 top-block-el">
+            <table class='table table-borderless second_table'>
+                <thead>
+                <tr>
+                    <th>Вход</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="default-cursor">
+                    <td>
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="left-inner-addon">
+                                        <i class="icon-user"></i>
+                                        <input type="text" class="form-control" id="inputLogin" placeholder="Логин">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <div class="left-inner-addon">
+                                        <i class="icon-password"></i>
+                                        <input type="password" class="form-control" id="inputPassword"
+                                               placeholder="Пароль">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <a class="form-control-static top-col-3-1" href="#">Регистрация</a> </br>
+                                    <a class="form-control-static top-col-3-2" href="#">Забыли пароль?</a>
+                                </div>
+                                <div class="col-sm-6 text-right">
+                                    <button type="submit" class="btn btn-primary">Войти</button>
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>
 <!--End top block-->
+
+
+<button class="side-fixed"></button>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>

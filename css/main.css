@@ -58,7 +58,16 @@
     font-style: normal;
     font-weight: normal;
 }
-
+/* font-family: "OpenSansLight"; */
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 /*HEADER*/
 .header_logo {
     margin: 10px 0 0 0;
@@ -181,12 +190,31 @@
     background: url("../images/top_bg.png") no-repeat;
     height: auto;
     background-size: 100%;
+    padding-left: 10%;
 }
 .top-block-el {
     background: #fff;
     margin-top: 70px;
     margin-right: 30px;
+    margin-left: 0;
     padding: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#top-col2 {
+    height: 616px;
+}
+@media screen and (max-width: 991px) {
+    #top-col2 {
+        margin-top: 0;
+        height: auto;
+    }
+}
+@media screen and (max-width: 767px) {
+    #top-col3 {
+        margin-top: 0;
+    }
 }
 .top-block-el-active {
     /*background: url("../images/list1_rectangle.png") no-repeat top right;*/
@@ -204,10 +232,7 @@
     padding: 5px 0 5px 0
 }
 .table-borderless tbody tr td:first-of-type {
-    padding-left: 30px
-}
-.table>tbody>tr>td {
-
+    padding: 5px 30px
 }
 .table-borderless thead {
     border-bottom: 1px solid #c2c0bd;
@@ -249,4 +274,80 @@
 }
 .second_table .table-borderless tbody tr td{
     padding: 0;
+}
+.form-group:first-of-type {
+    margin-top: 15px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.btn-primary {
+    background: #25ace3;
+    border: none;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-family: OpenSansSemiBold;
+    font-size: 18px;
+    color: #fefefe;
+}
+.btn-primary:hover, .btn-primary:focus{
+    background: #1e7ea9;
+}
+a.form-control-static.top-col-3-1 {
+    color: #808080;
+    font-family: OpenSansRegular;
+    font-size: 16px;
+    text-decoration: underline;
+
+    margin-left: 10px;
+}
+a.form-control-static.top-col-3-1:hover {
+    color: #383838;
+}
+a.form-control-static.top-col-3-2 {
+    color: #808080;
+    font-family: OpenSansLight;
+    font-size: 12px;
+
+    margin-left: 10px;
+}
+a.form-control-static.top-col-3-2:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 45px;
+}
+.left-inner-addon i {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    padding: 10px;
+    pointer-events: none;
+}
+i.icon-user  {
+    background: url("../images/ic_user.png") no-repeat;
+}
+i.icon-password  {
+    background: url("../images/ic_pw.png") no-repeat;
+    margin-left: 2px;
+}
+.default-cursor {
+    cursor: default !important;
+}
+
+
+.side-fixed {
+    width: 36px;
+    height: 245px;
+    background: url("../images/help_online.png");
+    position: fixed;
+    top: 30%;
+    right: 0;
+    z-index: 999;
+    border: none;
 }

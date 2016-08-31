@@ -20,14 +20,26 @@ $(function () {
         }
     });
 
-    $('.top-block-el tr').click(function () {
-        if (!$(this).find('th')[0]) {
+    $('.top-block-el .clickable tbody tr').click(function () {
+        console.log($(this));
             $(this).siblings().removeClass('top-block-el-active');
             $(this).addClass('top-block-el-active');
             $(this).siblings().find('img').removeClass('filter_white');
             $(this).find('img').addClass('filter_white');
             $(this).siblings().find('.top-col2-info').text("");
             $(this).find('.top-col2-info').text("не хватает?");
-        }
     });
 });
+
+function windowSize(){
+    if ($(window).width() <= '974' && $(window).width() >= '751')
+    {
+        $('#top-col2').detach().insertAfter('#top-col3');
+    }
+    else
+    {
+        $('#top-col3').detach().insertAfter('#top-col2');
+    }
+}
+$(window).load(windowSize);
+$(window).resize(windowSize);
