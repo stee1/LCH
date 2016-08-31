@@ -208,6 +208,10 @@
     background: url("../images/list1_rectangle.png") no-repeat top right;
     width: 105%;
 }
+.filter_white {
+    -webkit-filter: brightness(0.2) invert(1);
+    filter: brightness(0.2) invert(1);
+}
 .top-block-el li p {
     text-transform: none;
     display: inline;
@@ -219,7 +223,6 @@
 .top-block-el li img {
     margin-left: 30px;
 }
-
 .one-px-line {
     height: 1px;
     width: 100%;

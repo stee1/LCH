@@ -23,5 +23,7 @@ $(function () {
     $('.top-block-el li').click(function () {
         $(this).siblings().removeClass('top-block-el-active');
         $(this).addClass('top-block-el-active');
+        $(this).siblings().find('img').removeClass('filter_white');
+        $(this).find('img').addClass('filter_white');
     });
 });
