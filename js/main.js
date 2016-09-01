@@ -39,12 +39,10 @@ $(function () {
         }
         else if ($(window).width() <= 750) {
             if ($(this).parent().parent().find("#wtb").attr("class").indexOf("hidden-xs") === -1) {
-                console.log("here");
                 $(this).parent().parent().find("#wtb").addClass("hidden-xs");
                 $(this).parent().parent().find("#pp").removeClass("hidden-xs");
             }
             else if ($(this).parent().parent().find("#ab").attr("class").indexOf("hidden-xs") === -1) {
-                console.log("here");
                 $(this).parent().parent().find("#ab").addClass("hidden-xs");
                 $(this).parent().parent().find("#ego").removeClass("hidden-xs");
             }
@@ -60,12 +58,10 @@ $(function () {
         }
         else if ($(window).width() <= 750) {
             if ($(this).parent().parent().find("#ab").attr("class").indexOf("hidden-xs") > 0) {
-                console.log("here");
                 $(this).parent().parent().find("#ego").addClass("hidden-xs");
                 $(this).parent().parent().find("#ab").removeClass("hidden-xs");
             }
             else if ($(this).parent().parent().find("#wtb").attr("class").indexOf("hidden-xs") > 0 ) {
-                console.log("here");
                 $(this).parent().parent().find("#pp").addClass("hidden-xs");
                 $(this).parent().parent().find("#wtb").removeClass("hidden-xs");
             }

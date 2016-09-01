@@ -485,9 +485,6 @@ h1 {
     padding-top: 50px;
     /*height: 490px;*/
 }
-#greetings h1 {
-    color: #353535;
-}
 #greetings p {
     display: block;
     margin: 0 auto;
