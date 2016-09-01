@@ -443,19 +443,50 @@ h1 {
 
 /*partners*/
 #partners {
+    padding: 0;
     background: url("../images/partners_bg.png") no-repeat;
     height: 256px;
 }
-
+#partners .partners_container{
+    margin-left: 7%;
+    margin-right: 5%;
+    height: 256px;
+}
+.partners_arrow_right, .partners_arrow_left {
+    width: 24px;
+    height: 38px;
+    margin-top: 30%;
+    cursor: pointer;
+}
+.partners_arrow_left {
+    background: url("../images/partners_arrow_left.png") no-repeat;
+}
+.partners_arrow_left:hover {
+    background: url("../images/partners_arrow_left2.png") no-repeat;
+}
+.partners_arrow_right {
+    background: url("../images/partners_arrow_right.png") no-repeat;
+}
+.partners_arrow_right:hover {
+    background: url("../images/partners_arrow_right2.png") no-repeat;
+}
 #partners h1 {
     color: #ffffff;
-    margin-left: 5%;
+}
+#partners .row img {
+    display: inline;
+}
+#partners-logo-holder {
+    padding-top: 3%;
 }
 
-
+/*greetings*/
 #greetings {
     padding-top: 50px;
     /*height: 490px;*/
+}
+#greetings h1 {
+    color: #353535;
 }
 #greetings p {
     display: block;
@@ -509,6 +540,10 @@ h1 {
 #footer button {
     border: none;
     margin-right: 20px;
+}
+#footer button:hover {
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
 }
 .vk, .fb, .tw {
     background: url("../images/social_media_buttons.png") no-repeat;
