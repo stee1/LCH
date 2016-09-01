@@ -437,3 +437,93 @@ h1 {
 .main-sub-el p.main-text {
     margin-right: 25px;
 }
+.img-responsive {
+    margin: 0 auto;
+}
+
+/*partners*/
+#partners {
+    background: url("../images/partners_bg.png") no-repeat;
+    height: 256px;
+}
+
+#partners h1 {
+    color: #ffffff;
+    margin-left: 5%;
+}
+
+
+#greetings {
+    padding-top: 50px;
+    /*height: 490px;*/
+}
+#greetings p {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 12% 50px 12%;
+    font-family: OpenSansRegular;
+    font-size: 18px;
+    color: #353535;
+}
+
+/*footer*/
+#footer {
+    background: #393b3c;
+    /*height: 130px;*/
+}
+#footer .row {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 20px;
+}
+.footer-menu {
+
+    border-bottom: 1px solid #9f9f9f;
+}
+#footer ul>li {
+    display: inline;
+    padding-right: 40px;
+}
+#footer ul>li:last-child {
+    padding-right: 0;
+}
+#footer ul>li>a, .footer-lang a, .footer-lang p {
+    color: #7c7d7d;
+    font-family: OpenSansRegular;
+    font-size: 16.1px;
+}
+.footer-lang p{
+    margin: 0 10px;
+    display: inline;
+}
+#footer p {
+    display: inline;
+    font-family: OpenSansLight;
+    font-size: 14.09px;
+    color: #9f9f9f;
+}
+#footer .text-right img {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+#footer button {
+    border: none;
+    margin-right: 20px;
+}
+.vk, .fb, .tw {
+    background: url("../images/social_media_buttons.png") no-repeat;
+    width: 36px;
+    height: 36px;
+}
+.vk {
+    background-position: 0 0;
+}
+.fb {
+    background-position: -59px 0;
+}
+.tw {
+    background-position: -119px 0;
+}
+#footer .row div {
+    padding: 0;
+}
