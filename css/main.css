@@ -68,6 +68,17 @@
     font-style: normal;
     font-weight: normal;
 }
+/* font-family: "OpenSansSemiBoldItalic"; */
+@font-face {
+    font-family: "OpenSansBoldItalic";
+    src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+    src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"),
+    url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 /*HEADER*/
 .header_logo {
     margin: 10px 0 0 0;
@@ -188,7 +199,7 @@
 /*TOP BLOCK*/
 #top {
     background: url("../images/top_bg.png") no-repeat;
-    padding-bottom: 100px;
+    padding-bottom: 115px;
     padding-left: 10%;
 
     -webkit-background-size: cover;
@@ -251,7 +262,6 @@
 }
 .table>tbody>tr {
     cursor: pointer;
-
 }
 .table>tbody>tr>td p{
     color: #000000;
@@ -352,4 +362,78 @@ i.icon-password  {
     right: 0;
     z-index: 999;
     border: none;
+}
+
+
+.main-block {
+}
+.main-el {
+    padding: 20px 5px 20px 7%;
+    background: #f7f7f7;
+}
+.main-el-col2 {
+    background: #fff;
+    padding-left: 10px;
+}
+.main-el-col2>.main-sub-el {
+    background: #f7f7f7;
+}
+.main-el a {
+    margin: 40px 0;
+    font-family: OpenSansBoldItalic;
+    font-size: 17px;
+    color: #353535;
+    text-decoration: underline;
+    display: block;
+    -webkit-filter:  invert(1);
+    filter:  invert(1);
+}
+.main-el a:hover {
+    color: #353535;
+    text-decoration: none;
+    -webkit-filter:  invert(0);
+    filter:  invert(0);
+}
+.ic-arrow-right {
+    margin-left: 10px;
+}
+.main-sub-el {
+    background: #fff;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+    /*height: 500px;*/
+    height: 550px;
+    -webkit-box-shadow:  1px 3px 8px #c2c0bd;
+    -moz-box-shadow:  1px 3px 8px #c2c0bd;
+    box-shadow:  1px 3px 8px #c2c0bd;
+}
+.main-sub-el p {
+    margin: 10px 0 0 25px
+}
+.main-sub-el button {
+    margin: 10px 10%;
+    width: 80%;
+}
+h1 {
+    font-family: OpenSansSemiBold;
+    font-size: 30px;
+    color: #353535;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+.main-head-text {
+    padding-left: 10px;
+}
+.main-sub-el p.main-date {
+    margin: 10px 0 0 0;
+}
+.main-header {
+    font-family: OpenSansSemiBold;
+    font-size: 18px;
+    color: #353535;
+    padding: 0;
+}
+.main-sub-el p.main-text {
+    margin-right: 25px;
 }
