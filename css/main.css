@@ -599,7 +599,6 @@ h1 {
 
 #greetings {
     padding-top: 50px;
-    /*height: 490px;*/
 }
 #greetings p {
     display: block;
@@ -612,6 +611,7 @@ h1 {
 
 #footer {
     background: #393b3c;
+    padding-bottom: 15px;
 }
 #footer .row {
     margin-left: 5%;
