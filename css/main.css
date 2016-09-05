@@ -79,13 +79,17 @@
     font-weight: normal;
 }
 
-/*HEADER*/
+.container {
+    padding-right: 0;
+    width: 91.5%;
+}
+
 .header_logo {
     margin: 10px 0 0 0;
 }
 .logo_text {
     color: #000;
-    font-family: OpenSansRegular;
+    font-family: OpenSansRegular, serif;
     font-size: 12px;
     border-top: 1px solid #25ace3;
     width: 177px;
@@ -93,37 +97,45 @@
 }
 .logo_rectangle {
     color: #ffffff;
-    font-family: OpenSansLightItalic;
+    font-family: OpenSansLightItalic, serif;
     font-size: 15px;
     background: url("../images/logo_rectangle.png") no-repeat;
     padding: 3px 0 4px 20px;
     display:inline-block;
     width: 202px;
     position: relative;
-    top: -15px;
+    top: -11px;
+    right: -11px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1054px) {
     .logo_rectangle {
         top: 3px;
     }
 }
 .header_support {
     margin-top: 35px;
+    overflow: hidden;
 }
 .header_support_info1 {
     color: #25ace3; /* text color */
-    font-family: Exo2SemiBold;
-    font-size: 13.83px;
+    font-family: Exo2SemiBold, serif;
+    font-size: 14px;
     text-transform: uppercase;
     display: inline;
+    position: relative;
+    top: 3px;
+    left: 2px;
 }
 .header_support_info2 {
     color: #2c2c2c; /* text color */
-    font-family: Exo2Regular;
+    font-family: Exo2Regular, serif;
     font-size: 18px;
+    position: relative;
+    top: 5px;
+    left: 10px;
 }
 .header_contacts {
-    margin-top: 25px;
+    margin-top: 31px;
     padding: 0;
 }
 @media screen and (max-width: 767px) {
@@ -133,20 +145,27 @@
 }
 .header_phone {
     color: #4d4c4c; /* text color */
-    font-family: Exo2SemiBold;
+    font-family: Exo2SemiBold, serif;
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    position: relative;
+    left: 2px;
 }
-
+.icon-skype {
+    margin-top: -2px;
+}
 .header_skype {
     color: #1565c0; /* text color */
-    font-family: Exo2Medium;
+    font-family: Exo2Medium, serif;
     font-size: 16px;
     display: inline;
+    margin-left: 6px;
+    position: relative;
+    left: 2px;
 }
 
-/*NAVIGATION*/
+
 .navbar {
     margin-bottom: 0;
 }
@@ -154,6 +173,14 @@
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus{
     background: #393b3c;
+}
+.navbar-nav>li {
+    margin-left: 39px;
+}
+@media screen and (max-width: 1274px) {
+    .navbar-nav>li {
+        margin-left: 0;
+    }
 }
 .navbar-nav>li>.dropdown-menu {
     background: #393b3c;
@@ -163,7 +190,7 @@
 }
 .navbar-default .navbar-nav>li>a, .navbar-default .navbar-brand {
     color: #fff;
-    font-family: OpenSansRegular;
+    font-family: OpenSansRegular, serif;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -178,7 +205,6 @@
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus  {
     background: #555758;
 }
-
 .active {
     color: #25ace3;
 }
@@ -189,14 +215,12 @@
     margin-left: 3px;
 }
 .dropdown-menu {
-    min-width: 0px !important;
+    min-width: 0 !important;
 }
 .dropdown-menu>li>a {
     padding: 3px 15px;
 }
 
-
-/*TOP BLOCK*/
 #top {
     background: url("../images/top_bg.png") no-repeat;
     padding-bottom: 115px;
@@ -250,7 +274,7 @@
 .table-borderless thead {
     border-bottom: 1px solid #c2c0bd;
     color: #353535;
-    font-family: OpenSansSemiBold;
+    font-family: OpenSansSemiBold, serif;
     font-size: 18px;
     text-transform: uppercase;
 }
@@ -265,7 +289,7 @@
 }
 .table>tbody>tr>td p{
     color: #000000;
-    font-family: OpenSansRegular;
+    font-family: OpenSansRegular, serif;
     font-size: 14px;
     margin: 0 0 0 25px;
     display: inline;
@@ -280,7 +304,7 @@
 }
 .top-col2-info {
     color: #fff !important;
-    font-family: OpenSansRegular;
+    font-family: OpenSansRegular, serif;
     font-size: 12px;
     border-bottom: 1px dotted #fff;
 }
@@ -301,7 +325,7 @@
     border: none;
     padding: 10px 25px;
     text-transform: uppercase;
-    font-family: OpenSansSemiBold;
+    font-family: OpenSansSemiBold, serif;
     font-size: 18px;
     color: #fefefe;
 }
@@ -310,10 +334,9 @@
 }
 a.form-control-static.top-col-3-1 {
     color: #808080;
-    font-family: OpenSansRegular;
+    font-family: OpenSansRegular, serif;
     font-size: 16px;
     text-decoration: underline;
-
     margin-left: 10px;
 }
 a.form-control-static.top-col-3-1:hover {
@@ -321,9 +344,8 @@ a.form-control-static.top-col-3-1:hover {
 }
 a.form-control-static.top-col-3-2 {
     color: #808080;
-    font-family: OpenSansLight;
+    font-family: OpenSansLight, serif;
     font-size: 12px;
-
     margin-left: 10px;
 }
 a.form-control-static.top-col-3-2:hover {
@@ -354,8 +376,6 @@ i.icon-password  {
 .default-cursor {
     cursor: default !important;
 }
-
-
 .side-fixed {
     width: 36px;
     height: 245px;
@@ -366,8 +386,11 @@ i.icon-password  {
     z-index: 999;
     border: none;
 }
-
-
+@media screen and (max-width: 445px) {
+    .side-fixed {
+        top: 50%;
+    }
+}
 #main-block .img-responsive {
     width: 100%;
     /*height: 270px;*/
@@ -385,7 +408,7 @@ i.icon-password  {
 }
 .main-el a {
     margin: 40px 0;
-    font-family: OpenSansBoldItalic;
+    font-family: OpenSansBoldItalic, serif;
     font-size: 17px;
     color: #353535;
     text-decoration: underline;
@@ -407,8 +430,6 @@ i.icon-password  {
     margin-right: 10px;
     margin-bottom: 20px;
     padding: 0;
-    /*height: 500px;*/
-    /*height: 550px;*/
     -webkit-box-shadow:  1px 3px 8px #c2c0bd;
     -moz-box-shadow:  1px 3px 8px #c2c0bd;
     box-shadow:  1px 3px 8px #c2c0bd;
@@ -422,6 +443,9 @@ i.icon-password  {
     }
 }
 @media screen and (min-width: 1200px) {
+    .header_support {
+        margin-left: -70px;
+    }
     .main-sub-el p.main-text {
         height: 200px;
     }
@@ -444,14 +468,6 @@ i.icon-password  {
         height: 160px;
     }
 }
-/*@media screen and (min-width: 1423px) {*/
-    /*.main-header {*/
-        /*height: 60px;*/
-    /*}*/
-    /*.main-header-has-2-row {*/
-        /*height: 50px;*/
-    /*}*/
-/*}*/
 .main-sub-el p {
     margin: 0 0 0 25px
 }
@@ -460,7 +476,7 @@ i.icon-password  {
     width: 80%;
 }
 h1 {
-    font-family: OpenSansSemiBold;
+    font-family: OpenSansSemiBold, serif;
     font-size: 30px;
     color: #353535;
     text-transform: uppercase;
@@ -476,10 +492,8 @@ h1 {
 }
 .main-header {
     height: 110px;
-
     line-height: 110px;
-
-    font-family: OpenSansSemiBold;
+    font-family: OpenSansSemiBold, serif;
     font-size: 18px;
     color: #353535;
     padding: 0;
@@ -503,7 +517,6 @@ h1 {
     margin: 0 auto;
 }
 
-/*partners*/
 #partners {
     padding: 0;
     background: url("../images/partners_bg.png") no-repeat;
@@ -542,7 +555,6 @@ h1 {
     padding-top: 3%;
 }
 
-/*greetings*/
 #greetings {
     padding-top: 50px;
     /*height: 490px;*/
@@ -551,15 +563,13 @@ h1 {
     display: block;
     margin: 0 auto;
     padding: 10px 12% 50px 12%;
-    font-family: OpenSansRegular;
+    font-family: OpenSansRegular, serif;
     font-size: 18px;
     color: #353535;
 }
 
-/*footer*/
 #footer {
     background: #393b3c;
-    /*height: 130px;*/
 }
 #footer .row {
     margin-left: 5%;
@@ -579,8 +589,8 @@ h1 {
 }
 #footer ul>li>a, .footer-lang a, .footer-lang p {
     color: #7c7d7d;
-    font-family: OpenSansRegular;
-    font-size: 16.1px;
+    font-family: OpenSansRegular, serif;
+    font-size: 16px;
 }
 .footer-lang p{
     margin: 0 10px;
@@ -588,8 +598,8 @@ h1 {
 }
 #footer p {
     display: inline;
-    font-family: OpenSansLight;
-    font-size: 14.09px;
+    font-family: OpenSansLight, serif;
+    font-size: 14px;
     color: #9f9f9f;
 }
 #footer .text-right img {
