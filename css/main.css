@@ -225,32 +225,41 @@
     background: url("../images/top_bg.png") no-repeat;
     padding-bottom: 115px;
     padding-left: 10%;
+    background-size: 100% 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
 }
 .top-block-el {
     background: #fff;
-    margin: 70px 30px 0 0;
+    margin: 62px 42px 0 46px;
     padding: 0 0 10px 0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
-#top-col2 {
-    height: 616px;
-}
 @media screen and (max-width: 991px) {
-    #top-col2 {
+    .top-block-col-2 {
         margin-top: 20px;
-        height: auto;
+        margin-left: 46px !important;
+        height: auto !important;
+    }
+    a.form-control-static.top-col-3-2 {
+        font-size: 12px !important;
+    }
+    a.form-control-static.top-col-3-1 {
+        font-size: 14px !important;
     }
 }
 @media screen and (max-width: 767px) {
-    #top-col3 {
-        margin-top: 20px;
+    .top-block-el {
+        margin-left: 0;
+    }
+    .top-block-col-3 {
+        margin-top: 20px !important;
+        margin-left: 46px !important;
     }
 }
 .top-block-el-active {
@@ -301,8 +310,21 @@
     table-layout: fixed;
     word-wrap: break-word;
     margin-bottom: 0;
+    position: relative;
+    top: -3px;
+    left: 2px;
+}
+.top-block-col-2-container {
+    padding: 0;
+}
+.top-block-col-2 {
+    height: 616px;
+    margin-left: 0;
+    margin-right: 30px;
+    overflow: auto;
 }
 .top-col2-info {
+    margin-left: 15px !important;
     color: #fff !important;
     font-family: OpenSansRegular, serif;
     font-size: 12px;
@@ -310,6 +332,9 @@
 }
 .top-col2-info:hover {
     border: none;
+}
+.top-block-col-3{
+    margin: 62px 20px 0 11px;
 }
 .second_table .table-borderless tbody tr td{
     padding: 0;
@@ -368,10 +393,27 @@ a.form-control-static.top-col-3-2:hover {
 }
 i.icon-user  {
     background: url("../images/ic_user.png") no-repeat;
+    margin-left: 5px;
+    margin-top: 2px;
 }
 i.icon-password  {
     background: url("../images/ic_pw.png") no-repeat;
-    margin-left: 2px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.form-control {
+    height: 40px;
+}
+.form-group {
+    margin-bottom: 32px;
+}
+.bottom-form-group {
+    margin-top: -10px;
+    margin-bottom: 0;
+}
+.btn-login {
+    position: relative;
+    right: 7px;
 }
 .default-cursor {
     cursor: default !important;
