@@ -142,6 +142,13 @@
     .header_contacts {
         margin-top: 0;
     }
+    #footer ul>li {
+        display: inline-block !important;
+        padding-bottom: 25px;
+    }
+    ul {
+        margin-bottom: -15px;
+    }
 }
 .header_phone {
     color: #4d4c4c; /* text color */
@@ -222,15 +229,28 @@
 }
 
 #top {
-    background: url("../images/top_bg.png") no-repeat;
+    /*background: url("../images/top_bg.png") no-repeat;*/
     padding-bottom: 115px;
     padding-left: 10%;
-    background-size: 100% 100%;
+    position: relative;
+    /*background-size: 100% 100%;*/
 
     /*-webkit-background-size: cover;*/
     /*-moz-background-size: cover;*/
     /*-o-background-size: cover;*/
     /*background-size: cover;*/
+}
+#top .row {
+    position:relative;
+    z-index: 999
+}
+.top-block-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
 }
 .top-block-el {
     background: #fff;
@@ -275,10 +295,23 @@
     border: none;
 }
 .table-borderless tbody tr td {
-    padding: 5px 0 5px 0
+    padding: 5px 0 5px 0;
 }
 .table-borderless tbody tr td:first-of-type {
-    padding: 5px 30px
+    padding: 5px 30px;
+}
+@media screen and (max-width: 1445px) {
+    .table-borderless tbody tr td:first-of-type {
+        padding: 5px 20px
+    }
+}
+@media screen and (max-width: 1223px) {
+    .btn-login {
+        font-size: 14px;
+    }
+}
+.bottom-form-group div {
+    padding-right: 0;
 }
 .table-borderless thead {
     border-bottom: 1px solid #c2c0bd;
@@ -433,6 +466,17 @@ i.icon-password  {
         top: 50%;
     }
 }
+#main-block {
+    margin-top: -30px;
+}
+@media screen and (max-width: 1200px) {
+    #main-block {
+        margin-top: -55px;
+    }
+    #partners-logo-holder {
+        padding-top: 3% !important;
+    }
+}
 #main-block .img-responsive {
     width: 100%;
     /*height: 270px;*/
@@ -527,6 +571,11 @@ h1 {
 .main-head-text {
     padding-left: 10px;
 }
+@media screen and (max-width: 1410px) {
+    .main-head-text {
+        font-size: 16px;
+    }
+}
 .main-sub-el p.main-date {
     /*margin-left: -10px;*/
     margin: 0 0 0 -10px;
@@ -594,9 +643,16 @@ h1 {
     display: inline;
 }
 #partners-logo-holder {
-    padding-top: 3%;
+    padding-top: 2%;
 }
-
+@media screen and (max-width: 992px){
+    #partners-logo-holder {
+        padding-top: 4% !important;
+    }
+    .main-el-col2 {
+        padding-left: 4%;
+    }
+}
 #greetings {
     padding-top: 50px;
 }
